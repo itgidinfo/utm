@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItGid.info - TinyMCE</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container-free">
+            <h1 class="site-title">
+                ItGid.info
+            </h1>
+        </div>
+    </header>
+    <div class="container">
+        <h1>ItGid.info - <span class="lng-unit">разбираемся с UTM метками</span></h1>
+        <h2 class="lng-product-title">UTM метки</h2>
+        <section>
+            <textarea type="text" class="utm">
+                https://www.citrus.ua/naushniki/naushniki-samsung-galaxy-buds-live-black-671140.html?utm_medium=cpc&utm_source=hotline&utm_campaign=%D0%9D%D0%B0%D1%83%D1%88%D0%BD%D0%B8%D0%BA%D0%B8,%20%D0%B3%D0%B0%D1%80%D0%BD%D0%B8%D1%82%D1%83%D1%80%D1%8B&utm_term=Samsung%20Galaxy%20Buds%20Live%20Black%20%28SM-R180NZKA%29&utm_content=671140
+            </textarea>
+        </section>
+        <section>
+            <button class="get-data">Get data</button>
+        </section>
+        <section>
+            <div class="out"></div>
+        </section>
+
+
+
+        <div class="courses">
+            <ul>
+                <li><a href="https://itgid.info/course/javascript-2">JavaScript 2.0</a></li>
+                <li><a href="https://itgid.info/course/html">HTML для JS разработчиков</a></li>
+                <li><a href="https://itgid.info/course/object-js">Объектно Ориентированный JavaScript</a></li>
+                <li><a href="https://itgid.info/course/reactjs">ReactJS</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.tiny.cloud/1/t3349wm8jxfh2mrqyd2mfnrm608ttnyliyx5m6kuyf8kl9b1/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#mytextarea',
+            toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolory | outdent indent',
+            plugins: 'code'
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
