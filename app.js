@@ -16,11 +16,11 @@ document.querySelector('.get-data').addEventListener('click', () => {
     let out = '';
     out += `<p>Host: ${url.host}`;
 
-    if (url.search.indexOf('&') !== -1) {
-        searchString = url.search.slice(1).split('&');
+    if (url.search.indexOf('&amp;') !== -1) {
+        searchString = url.search.slice(1).split('&amp;');
     }
     else {
-        searchString = url.search.slice(1).split('&amp;');
+        searchString = url.search.slice(1).split('&');
     }
     // console.log(searchString);
     const res = searchStringToObj(searchString);
